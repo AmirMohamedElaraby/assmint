@@ -1,0 +1,10 @@
+class RegistrationModel{
+  bool status;
+
+  RegistrationModel({required this.status});
+
+  factory RegistrationModel.fromJson(Map<String,dynamic>json)
+  {
+    return RegistrationModel(status: json['status']);
+  }
+}
